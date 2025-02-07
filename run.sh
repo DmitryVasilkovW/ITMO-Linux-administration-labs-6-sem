@@ -1,9 +1,8 @@
 #!/bin/bash
 
 function show_menu() {
-    clear
     echo "select action:"
-    for i in {1..4}; do
+    for i in {1..5}; do
         if [ $selected -eq $i ]; then
             echo "* $i. ${options[$i-1]} *"
         else
@@ -20,12 +19,15 @@ function execute_script() {
     read script_number
 
     file="${pattern}${script_number}.sh"
-    if [[ -f $file ]]; then
-        full_path="$path/$file"
-        bash "$full_path"
+    full_path="$path/$file"
+    if [[ -f ./$full_path ]]; then
+        ./$full_path
+        echo "success"
     else
-        echo "$file not found"
+        echo "$full_path not found"
     fi
+
+    echo -e "\n\n"
 }
 
 function show_script() {
@@ -33,12 +35,16 @@ function show_script() {
     read script_number
     
     file="${pattern}${script_number}.sh"
-    if [[ -f $file ]]; then
-        full_path="$path/$file"
-        cat "$full_path"
+    full_path="$path/$file"
+    if [[ -f ./$full_path ]]; then
+        echo "----$file----"
+        echo -e "\n\n"
+        cat "./$full_path"
     else
         echo "$file not found"
     fi
+
+    echo -e "\n\n"
 }
 
 function execute_range() {
@@ -47,13 +53,17 @@ function execute_range() {
     
     for ((i=start; i<=end; i++)); do
         file="${pattern}${i}.sh"
-        if [[ -f $file ]]; then
-            full_path="$path/$file"
-            bash "$full_path"
+        full_path="$path/$file"
+
+        if [[ -f ./$full_path ]]; then
+            echo "exec $file"
+            ./$full_path
         else
-            echo "not found $file"
+            echo "not found $full_path"
         fi
     done
+
+    echo -e "\n\n"
 }
 
 function show_range() {
@@ -62,13 +72,22 @@ function show_range() {
     
     for ((i=start; i<=end; i++)); do
         file="${pattern}${i}.sh"
-        if [[ -f $file ]]; then
-            full_path="$path/$file"
-            cat "$full_path"
+        full_path="$path/$file"
+
+        if [[ -f ./$full_path ]]; then
+            echo "----$file----"
+            echo -e "\n\n"
+
+            cat "./$full_path"
+
+            echo -e "\n\n"
+            echo "----$file----"
         else
             echo "not found $file"
         fi
     done
+
+    echo -e "\n\n"
 }
 
 selected=1
@@ -80,6 +99,7 @@ while true; do
 
   stty -echo
   read -s -n 3 key
+  clear
   stty echo
 
   case "$key" in
