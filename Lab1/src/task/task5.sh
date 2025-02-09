@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln ~/test/list ~/test/links/list_hlink
+useradd -p 12345678 u1

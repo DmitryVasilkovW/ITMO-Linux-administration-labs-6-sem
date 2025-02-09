@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mv ~/test/list ~/test/list1
+cat /etc/group | grep "g1" | awk 'BEGIN{FS=":"} {print $1, $3}' >> work3.log

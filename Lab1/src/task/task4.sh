@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mkdir -p ~/test/links
+echo "Be careful!" > /etc/skel/readme.txt

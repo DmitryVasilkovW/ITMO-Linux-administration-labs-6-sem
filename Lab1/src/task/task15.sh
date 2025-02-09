@@ -1,3 +1,6 @@
 #!/bin/bash
 
-cat ~/list_conf ~/list_d > ~/list_conf_d
+mkdir /home/test14
+
+chown u1 /home/test14
+chmod 1777 /home/test14

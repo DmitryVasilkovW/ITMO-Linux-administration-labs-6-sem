@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln -s ~/test/links ~/links_hard
+useradd -p 87654321 u2
