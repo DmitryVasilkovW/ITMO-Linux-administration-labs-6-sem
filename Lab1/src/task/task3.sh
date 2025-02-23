@@ -1,3 +1,4 @@
 #!/bin/bash
 
-getent group | cut -d : -f1 | sed -z 's/\n/,/g;s/,$/\n/' >> work3.log
+groups_list=$(cut -d: -f1 /etc/group | paste -sd, -)
+echo "Groups: $groups_list" >> work3.log

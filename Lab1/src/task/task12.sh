@@ -1,3 +1,5 @@
 #!/bin/bash
 
-useradd -p 87654321 u2
+password=$(openssl passwd "87654321")
+
+useradd -m -p "$password" u2

@@ -1,3 +1,6 @@
 #!/bin/bash
 
-cat /etc/group | grep "g1" | awk 'BEGIN{FS=":"} {print $1, $3}' >> work3.log
+users_in_g1=$(getent group g1 | awk -F: '{print $4}')
+
+echo "Users in group g1: $users_in_g1" >> work3.log
+

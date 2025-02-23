@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo 'u1 ALL=(ALL) NOPASSWD: /usr/bin/passwd [A-Za-z0-9_-]*' | sudo tee -a /etc/sudoers > /dev/null
+echo "u1 ALL=(root) NOPASSWD: /usr/bin/passwd" > /etc/sudoers.d/u1-passwd
+chmod 440 /etc/sudoers.d/u1-passwd
 
