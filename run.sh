@@ -2,7 +2,7 @@
 
 function show_menu() {
     echo "select action:"
-    for i in {1..5}; do
+    for i in {1..6}; do
         if [ $selected -eq $i ]; then
             echo "* $i. ${options[$i-1]} *"
         else
@@ -13,6 +13,29 @@ function show_menu() {
 
 pattern=task
 path="${1:-.}"
+
+function make_script() {
+   temp_file=$(mktemp)
+
+   echo "#!/bin/bash" > "$temp_file"
+
+   for file in "$path"/*; do
+     if [[ -f "$file" ]]; then
+       tail -n +2 "$file" >> "$temp_file"
+       echo "" >> "$temp_file"
+     fi
+   done
+
+   echo "script has been successfully built."
+   read -rp "Enter a relative path to save (for example, ./output): " output_dir
+
+   mkdir -p "$output_dir"
+
+   mv "$temp_file" "$output_dir/lab.sh"
+   chmod +x "$output_dir/lab.sh"
+
+   echo "The file is saved in '$output_dir/lab.sh'"
+}
 
 function execute_script() {
     echo "enter number:"
@@ -92,7 +115,7 @@ function show_range() {
 
 selected=1
 
-options=("execute script" "show script" "execute range" "show range" "exit")
+options=("execute script" "show script" "execute range" "show range" "make script" "exit")
 
 while true; do
   show_menu
@@ -109,7 +132,7 @@ while true; do
           fi
           ;;
       $'\x1b[B')
-          if [ $selected -lt 5 ]; then
+          if [ $selected -lt 6 ]; then
               ((selected++))
           fi
           ;;
@@ -119,7 +142,8 @@ while true; do
             2) show_script ;;
             3) execute_range ;;
             4) show_range ;;
-            5) exit ;;
+            5) make_script ;;
+            6) exit ;;
           esac
           ;;
   esac
