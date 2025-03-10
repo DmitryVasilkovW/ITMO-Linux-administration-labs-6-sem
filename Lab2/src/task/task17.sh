@@ -2,4 +2,4 @@
 
 pvcreate /dev/sde
 vgextend myvg /dev/sde
-lvextend -l +100%FREE /dev/myvg/mylv
+lvextend -l1 +100%FREE /dev/myvg/mylv
