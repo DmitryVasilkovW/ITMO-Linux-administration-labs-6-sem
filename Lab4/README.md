@@ -114,7 +114,7 @@ systemctl disable cron.service
 ## Часть 3. Создание собственного сервиса mymsg
 
 
-### 1) Подготовка скрипта в /usr/local/bin/mymsg.sh
+### 1) Подготовка скрипта в `/usr/local/bin/mymsg.sh`
 
 ````shell
 #!/bin/bash
@@ -122,7 +122,7 @@ systemctl disable cron.service
 /usr/bin/logger "System boot at $(date)"
 ````
 
-### 2) Создание файла юнита в /etc/systemd/system/mymsg.service
+### 2) Создание файла юнита в `/etc/systemd/system/mymsg.service`
 
 ````service
 [Unit]
@@ -235,7 +235,7 @@ mkdir -p /mnt/mydata
 ````
 
 
-### 2) Создание файла .mount юнита в /etc/systemd/system/mnt-mydata.mount
+### 2) Создание файла .mount юнита в `/etc/systemd/system/mnt-mydata.mount`
 
 ````service
 [Unit]
@@ -292,7 +292,7 @@ mount | grep /mnt/mydata
 ### Нужно выполнить [пункт 5](#Часть-5.-Создание-и-настройка-.mount-юнита) если он еще не выполнен
 
 
-### 2) Создание файла .automount юнита в /etc/systemd/system/mnt-mydata.automount
+### 2) Создание файла .automount юнита в `/etc/systemd/system/mnt-mydata.automount`
 
 ````service
 [Unit]
