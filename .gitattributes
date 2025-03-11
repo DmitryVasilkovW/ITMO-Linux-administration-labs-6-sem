@@ -1,3 +1,6 @@
 *.service linguist-detectable=true
 *.mount linguist-detectable=true
 *.automount linguist-detectable=true
+
+*.mount linguist-language=INI
+*.automount linguist-language=INI
