@@ -1,0 +1,12 @@
+[Unit]
+Description=Mounting a partition /mnt/mydata
+
+[Mount]
+What=/dev/sdb1
+Where=/mnt/mydata
+Type=ext4
+Options=defaults
+
+[Install]
+WantedBy=multi-user.target
+
