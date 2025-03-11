@@ -1,7 +1,7 @@
 #!/bin/bash
 
-systemctl status cronie.service
+systemctl status cron.service
 
 #Если сервис не запущен, его можно запустить:
 
-systemctl start cronie.service
+systemctl start cron.service

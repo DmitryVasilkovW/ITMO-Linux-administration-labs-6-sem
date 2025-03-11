@@ -1,4 +1,4 @@
 #!/bin/bash
 
-systemctl stop cronie.service
-systemctl disable cronie.service
+systemctl stop cron.service
+systemctl disable cron.service

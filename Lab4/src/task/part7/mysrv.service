@@ -1,0 +1,8 @@
+[Unit]
+Description=My SRV Service – запуск возможен только если mymsg остановлен
+Conflicts=mymsg.service
+After=mymsg.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/echo "mysrv запущен, mymsg остановлен"

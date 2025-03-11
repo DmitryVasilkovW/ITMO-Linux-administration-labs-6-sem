@@ -1,0 +1,4 @@
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mymsg.sh
+RemainAfterExit=yes

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-systemctl show cronie.service
+systemctl show cron.service
