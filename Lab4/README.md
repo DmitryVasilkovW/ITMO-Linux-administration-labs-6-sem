@@ -128,7 +128,7 @@ systemctl disable cron.service
 [Unit]
 Description=My Message Service: writes date and time to the system log
 After=network-online.target
-Wants=network-online.target
+Requires=network-online.target
 
 [Service]
 Type=oneshot
