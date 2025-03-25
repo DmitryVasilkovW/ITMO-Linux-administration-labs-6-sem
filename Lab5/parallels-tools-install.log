@@ -1,0 +1,850 @@
+Started installation of Parallels Guest Tools version '20.2.1.55876'
+Hit:1 http://security.debian.org/debian-security trixie-security InRelease
+Hit:2 http://deb.debian.org/debian trixie InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-aarch64-linux-gnu binutils-common gcc-14
+  gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libbinutils
+  libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0
+  libgcc-14-dev libgprofng0 libhwasan0 libitm1 liblsan0 libsframe1 libtsan2
+  libubsan1 linux-libc-dev manpages-dev rpcsvc-proto
+Suggested packages:
+  binutils-doc gprofng-gui binutils-gold gcc-multilib make autoconf automake
+  libtool flex bison gdb gcc-doc gcc-14-doc gcc-14-locales
+  gdb-aarch64-linux-gnu libc-devtools glibc-doc
+The following NEW packages will be installed:
+  binutils binutils-aarch64-linux-gnu binutils-common gcc gcc-14
+  gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libbinutils
+  libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0
+  libgcc-14-dev libgprofng0 libhwasan0 libitm1 liblsan0 libsframe1 libtsan2
+  libubsan1 linux-libc-dev manpages-dev rpcsvc-proto
+0 upgraded, 26 newly installed, 0 to remove and 0 not upgraded.
+Need to get 40.9 MB of archives.
+After this operation, 172 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 libsframe1 arm64 2.44-1 [77.5 kB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 binutils-common arm64 2.44-1 [2509 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 libbinutils arm64 2.44-1 [661 kB]
+Get:4 http://deb.debian.org/debian trixie/main arm64 libgprofng0 arm64 2.44-1 [669 kB]
+Get:5 http://deb.debian.org/debian trixie/main arm64 libctf-nobfd0 arm64 2.44-1 [152 kB]
+Get:6 http://deb.debian.org/debian trixie/main arm64 libctf0 arm64 2.44-1 [84.0 kB]
+Get:7 http://deb.debian.org/debian trixie/main arm64 binutils-aarch64-linux-gnu arm64 2.44-1 [820 kB]
+Get:8 http://deb.debian.org/debian trixie/main arm64 binutils arm64 2.44-1 [261 kB]
+Get:9 http://deb.debian.org/debian trixie/main arm64 libcc1-0 arm64 14.2.0-16 [42.3 kB]
+Get:10 http://deb.debian.org/debian trixie/main arm64 libitm1 arm64 14.2.0-16 [24.1 kB]
+Get:11 http://deb.debian.org/debian trixie/main arm64 libasan8 arm64 14.2.0-16 [2580 kB]
+Get:12 http://deb.debian.org/debian trixie/main arm64 liblsan0 arm64 14.2.0-16 [1162 kB]
+Get:13 http://deb.debian.org/debian trixie/main arm64 libtsan2 arm64 14.2.0-16 [2386 kB]
+Get:14 http://deb.debian.org/debian trixie/main arm64 libubsan1 arm64 14.2.0-16 [1039 kB]
+Get:15 http://deb.debian.org/debian trixie/main arm64 libhwasan0 arm64 14.2.0-16 [1443 kB]
+Get:16 http://deb.debian.org/debian trixie/main arm64 libgcc-14-dev arm64 14.2.0-16 [2362 kB]
+Get:17 http://deb.debian.org/debian trixie/main arm64 gcc-14-aarch64-linux-gnu arm64 14.2.0-16 [17.7 MB]
+Get:18 http://deb.debian.org/debian trixie/main arm64 gcc-14 arm64 14.2.0-16 [526 kB]
+Get:19 http://deb.debian.org/debian trixie/main arm64 gcc-aarch64-linux-gnu arm64 4:14.2.0-1 [1440 B]
+Get:20 http://deb.debian.org/debian trixie/main arm64 gcc arm64 4:14.2.0-1 [5136 B]
+Get:21 http://deb.debian.org/debian trixie/main arm64 libc-dev-bin arm64 2.40-6 [55.8 kB]
+Get:22 http://deb.debian.org/debian trixie/main arm64 linux-libc-dev all 6.12.12-1 [2495 kB]
+Get:23 http://deb.debian.org/debian trixie/main arm64 libcrypt-dev arm64 1:4.4.38-1 [123 kB]
+Get:24 http://deb.debian.org/debian trixie/main arm64 rpcsvc-proto arm64 1.4.3-1+b1 [60.5 kB]
+Get:25 http://deb.debian.org/debian trixie/main arm64 libc6-dev arm64 2.40-6 [1595 kB]
+Get:26 http://deb.debian.org/debian trixie/main arm64 manpages-dev all 6.9.1-1 [2122 kB]
+Fetched 40.9 MB in 40s (1032 kB/s)
+Selecting previously unselected package libsframe1:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 133750 files and directories currently installed.)
+Preparing to unpack .../00-libsframe1_2.44-1_arm64.deb ...
+Unpacking libsframe1:arm64 (2.44-1) ...
+Selecting previously unselected package binutils-common:arm64.
+Preparing to unpack .../01-binutils-common_2.44-1_arm64.deb ...
+Unpacking binutils-common:arm64 (2.44-1) ...
+Selecting previously unselected package libbinutils:arm64.
+Preparing to unpack .../02-libbinutils_2.44-1_arm64.deb ...
+Unpacking libbinutils:arm64 (2.44-1) ...
+Selecting previously unselected package libgprofng0:arm64.
+Preparing to unpack .../03-libgprofng0_2.44-1_arm64.deb ...
+Unpacking libgprofng0:arm64 (2.44-1) ...
+Selecting previously unselected package libctf-nobfd0:arm64.
+Preparing to unpack .../04-libctf-nobfd0_2.44-1_arm64.deb ...
+Unpacking libctf-nobfd0:arm64 (2.44-1) ...
+Selecting previously unselected package libctf0:arm64.
+Preparing to unpack .../05-libctf0_2.44-1_arm64.deb ...
+Unpacking libctf0:arm64 (2.44-1) ...
+Selecting previously unselected package binutils-aarch64-linux-gnu.
+Preparing to unpack .../06-binutils-aarch64-linux-gnu_2.44-1_arm64.deb ...
+Unpacking binutils-aarch64-linux-gnu (2.44-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../07-binutils_2.44-1_arm64.deb ...
+Unpacking binutils (2.44-1) ...
+Selecting previously unselected package libcc1-0:arm64.
+Preparing to unpack .../08-libcc1-0_14.2.0-16_arm64.deb ...
+Unpacking libcc1-0:arm64 (14.2.0-16) ...
+Selecting previously unselected package libitm1:arm64.
+Preparing to unpack .../09-libitm1_14.2.0-16_arm64.deb ...
+Unpacking libitm1:arm64 (14.2.0-16) ...
+Selecting previously unselected package libasan8:arm64.
+Preparing to unpack .../10-libasan8_14.2.0-16_arm64.deb ...
+Unpacking libasan8:arm64 (14.2.0-16) ...
+Selecting previously unselected package liblsan0:arm64.
+Preparing to unpack .../11-liblsan0_14.2.0-16_arm64.deb ...
+Unpacking liblsan0:arm64 (14.2.0-16) ...
+Selecting previously unselected package libtsan2:arm64.
+Preparing to unpack .../12-libtsan2_14.2.0-16_arm64.deb ...
+Unpacking libtsan2:arm64 (14.2.0-16) ...
+Selecting previously unselected package libubsan1:arm64.
+Preparing to unpack .../13-libubsan1_14.2.0-16_arm64.deb ...
+Unpacking libubsan1:arm64 (14.2.0-16) ...
+Selecting previously unselected package libhwasan0:arm64.
+Preparing to unpack .../14-libhwasan0_14.2.0-16_arm64.deb ...
+Unpacking libhwasan0:arm64 (14.2.0-16) ...
+Selecting previously unselected package libgcc-14-dev:arm64.
+Preparing to unpack .../15-libgcc-14-dev_14.2.0-16_arm64.deb ...
+Unpacking libgcc-14-dev:arm64 (14.2.0-16) ...
+Selecting previously unselected package gcc-14-aarch64-linux-gnu.
+Preparing to unpack .../16-gcc-14-aarch64-linux-gnu_14.2.0-16_arm64.deb ...
+Unpacking gcc-14-aarch64-linux-gnu (14.2.0-16) ...
+Selecting previously unselected package gcc-14.
+Preparing to unpack .../17-gcc-14_14.2.0-16_arm64.deb ...
+Unpacking gcc-14 (14.2.0-16) ...
+Selecting previously unselected package gcc-aarch64-linux-gnu.
+Preparing to unpack .../18-gcc-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+Unpacking gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../19-gcc_4%3a14.2.0-1_arm64.deb ...
+Unpacking gcc (4:14.2.0-1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../20-libc-dev-bin_2.40-6_arm64.deb ...
+Unpacking libc-dev-bin (2.40-6) ...
+Selecting previously unselected package linux-libc-dev.
+Preparing to unpack .../21-linux-libc-dev_6.12.12-1_all.deb ...
+Unpacking linux-libc-dev (6.12.12-1) ...
+Selecting previously unselected package libcrypt-dev:arm64.
+Preparing to unpack .../22-libcrypt-dev_1%3a4.4.38-1_arm64.deb ...
+Unpacking libcrypt-dev:arm64 (1:4.4.38-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../23-rpcsvc-proto_1.4.3-1+b1_arm64.deb ...
+Unpacking rpcsvc-proto (1.4.3-1+b1) ...
+Selecting previously unselected package libc6-dev:arm64.
+Preparing to unpack .../24-libc6-dev_2.40-6_arm64.deb ...
+Unpacking libc6-dev:arm64 (2.40-6) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../25-manpages-dev_6.9.1-1_all.deb ...
+Unpacking manpages-dev (6.9.1-1) ...
+Setting up manpages-dev (6.9.1-1) ...
+Setting up binutils-common:arm64 (2.44-1) ...
+Setting up linux-libc-dev (6.12.12-1) ...
+Setting up libctf-nobfd0:arm64 (2.44-1) ...
+Setting up libsframe1:arm64 (2.44-1) ...
+Setting up rpcsvc-proto (1.4.3-1+b1) ...
+Setting up libubsan1:arm64 (14.2.0-16) ...
+Setting up libhwasan0:arm64 (14.2.0-16) ...
+Setting up libcrypt-dev:arm64 (1:4.4.38-1) ...
+Setting up libasan8:arm64 (14.2.0-16) ...
+Setting up libtsan2:arm64 (14.2.0-16) ...
+Setting up libbinutils:arm64 (2.44-1) ...
+Setting up libc-dev-bin (2.40-6) ...
+Setting up libcc1-0:arm64 (14.2.0-16) ...
+Setting up liblsan0:arm64 (14.2.0-16) ...
+Setting up libitm1:arm64 (14.2.0-16) ...
+Setting up libctf0:arm64 (2.44-1) ...
+Setting up binutils-aarch64-linux-gnu (2.44-1) ...
+Setting up libgprofng0:arm64 (2.44-1) ...
+Setting up libc6-dev:arm64 (2.40-6) ...
+Setting up libgcc-14-dev:arm64 (14.2.0-16) ...
+Setting up binutils (2.44-1) ...
+Setting up gcc-14-aarch64-linux-gnu (14.2.0-16) ...
+Setting up gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+Setting up gcc-14 (14.2.0-16) ...
+Setting up gcc (4:14.2.0-1) ...
+Processing triggers for man-db (2.13.0-1) ...
+Processing triggers for libc-bin (2.40-6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  libfuse2t64
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 116 kB of archives.
+After this operation, 481 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 libfuse2t64 arm64 2.9.9-9 [116 kB]
+Fetched 116 kB in 6s (20.8 kB/s)
+Selecting previously unselected package libfuse2t64:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 140362 files and directories currently installed.)
+Preparing to unpack .../libfuse2t64_2.9.9-9_arm64.deb ...
+Adding 'diversion of /lib/aarch64-linux-gnu/libfuse.so.2 to /lib/aarch64-linux-gnu/libfuse.so.2.usr-is-merged by libfuse2t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libfuse.so.2.9.9 to /lib/aarch64-linux-gnu/libfuse.so.2.9.9.usr-is-merged by libfuse2t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libulockmgr.so.1 to /lib/aarch64-linux-gnu/libulockmgr.so.1.usr-is-merged by libfuse2t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libulockmgr.so.1.0.1 to /lib/aarch64-linux-gnu/libulockmgr.so.1.0.1.usr-is-merged by libfuse2t64'
+Unpacking libfuse2t64:arm64 (2.9.9-9) ...
+Setting up libfuse2t64:arm64 (2.9.9-9) ...
+Removing 'diversion of /lib/aarch64-linux-gnu/libfuse.so.2 to /lib/aarch64-linux-gnu/libfuse.so.2.usr-is-merged by libfuse2t64'
+Removing 'diversion of /lib/aarch64-linux-gnu/libfuse.so.2.9.9 to /lib/aarch64-linux-gnu/libfuse.so.2.9.9.usr-is-merged by libfuse2t64'
+Removing 'diversion of /lib/aarch64-linux-gnu/libulockmgr.so.1 to /lib/aarch64-linux-gnu/libulockmgr.so.1.usr-is-merged by libfuse2t64'
+Removing 'diversion of /lib/aarch64-linux-gnu/libulockmgr.so.1.0.1 to /lib/aarch64-linux-gnu/libulockmgr.so.1.0.1.usr-is-merged by libfuse2t64'
+Processing triggers for libc-bin (2.40-6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-headers-6.12.12-common linux-kbuild-6.12.12
+The following NEW packages will be installed:
+  linux-headers-6.12.12-arm64 linux-headers-6.12.12-common
+  linux-kbuild-6.12.12
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 13.5 MB of archives.
+After this operation, 69.8 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 linux-headers-6.12.12-common all 6.12.12-1 [10.8 MB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 linux-kbuild-6.12.12 arm64 6.12.12-1 [1201 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 linux-headers-6.12.12-arm64 arm64 6.12.12-1 [1555 kB]
+Fetched 13.5 MB in 7s (1863 kB/s)
+Selecting previously unselected package linux-headers-6.12.12-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 140376 files and directories currently installed.)
+Preparing to unpack .../linux-headers-6.12.12-common_6.12.12-1_all.deb ...
+Unpacking linux-headers-6.12.12-common (6.12.12-1) ...
+Selecting previously unselected package linux-kbuild-6.12.12.
+Preparing to unpack .../linux-kbuild-6.12.12_6.12.12-1_arm64.deb ...
+Unpacking linux-kbuild-6.12.12 (6.12.12-1) ...
+Selecting previously unselected package linux-headers-6.12.12-arm64.
+Preparing to unpack .../linux-headers-6.12.12-arm64_6.12.12-1_arm64.deb ...
+Unpacking linux-headers-6.12.12-arm64 (6.12.12-1) ...
+Setting up linux-kbuild-6.12.12 (6.12.12-1) ...
+Setting up linux-headers-6.12.12-common (6.12.12-1) ...
+Setting up linux-headers-6.12.12-arm64 (6.12.12-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 453 kB of archives.
+After this operation, 1868 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 make arm64 4.4.1-1 [453 kB]
+Fetched 453 kB in 2s (190 kB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 158145 files and directories currently installed.)
+Preparing to unpack .../make_4.4.1-1_arm64.deb ...
+Unpacking make (4.4.1-1) ...
+Setting up make (4.4.1-1) ...
+Processing triggers for man-db (2.13.0-1) ...
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://security.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  binfmt-support
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 68.2 kB of archives.
+After this operation, 326 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 binfmt-support arm64 2.2.2-7+b1 [68.2 kB]
+Fetched 68.2 kB in 2s (44.8 kB/s)
+Selecting previously unselected package binfmt-support.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 158194 files and directories currently installed.)
+Preparing to unpack .../binfmt-support_2.2.2-7+b1_arm64.deb ...
+Unpacking binfmt-support (2.2.2-7+b1) ...
+Setting up binfmt-support (2.2.2-7+b1) ...
+update-binfmts: warning: python3.13 already enabled in kernel.
+Created symlink '/etc/systemd/system/multi-user.target.wants/binfmt-support.service' -> '/usr/lib/systemd/system/binfmt-support.service'.
+Processing triggers for man-db (2.13.0-1) ...
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://security.debian.org/debian-security trixie-security InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  build-essential dpkg-dev fakeroot g++ g++-14 g++-14-aarch64-linux-gnu
+  g++-aarch64-linux-gnu libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libstdc++-14-dev patch
+Suggested packages:
+  menu debian-keyring gcc-14-doc git bzr libstdc++-14-doc ed diffutils-doc
+The following NEW packages will be installed:
+  build-essential dkms dpkg-dev fakeroot g++ g++-14 g++-14-aarch64-linux-gnu
+  g++-aarch64-linux-gnu libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libstdc++-14-dev patch
+0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Need to get 14.7 MB of archives.
+After this operation, 62.1 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 libdpkg-perl all 1.22.15 [648 kB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 patch arm64 2.7.6-7+b1 [118 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 dpkg-dev all 1.22.15 [1337 kB]
+Get:4 http://deb.debian.org/debian trixie/main arm64 libstdc++-14-dev arm64 14.2.0-16 [2293 kB]
+Get:5 http://deb.debian.org/debian trixie/main arm64 g++-14-aarch64-linux-gnu arm64 14.2.0-16 [10.1 MB]
+Get:6 http://deb.debian.org/debian trixie/main arm64 g++-14 arm64 14.2.0-16 [21.8 kB]
+Get:7 http://deb.debian.org/debian trixie/main arm64 g++-aarch64-linux-gnu arm64 4:14.2.0-1 [1200 B]
+Get:8 http://deb.debian.org/debian trixie/main arm64 g++ arm64 4:14.2.0-1 [1332 B]
+Get:9 http://deb.debian.org/debian trixie/main arm64 build-essential arm64 12.12 [4624 B]
+Get:10 http://deb.debian.org/debian trixie/main arm64 dkms all 3.1.5-1 [55.5 kB]
+Get:11 http://deb.debian.org/debian trixie/main arm64 libfakeroot arm64 1.37-1 [29.5 kB]
+Get:12 http://deb.debian.org/debian trixie/main arm64 fakeroot arm64 1.37-1 [74.9 kB]
+Get:13 http://deb.debian.org/debian trixie/main arm64 libalgorithm-diff-perl all 1.201-1 [43.3 kB]
+Get:14 http://deb.debian.org/debian trixie/main arm64 libalgorithm-diff-xs-perl arm64 0.04-8+b4 [11.2 kB]
+Get:15 http://deb.debian.org/debian trixie/main arm64 libalgorithm-merge-perl all 0.08-5 [11.8 kB]
+Get:16 http://deb.debian.org/debian trixie/main arm64 libfile-fcntllock-perl arm64 0.22-4+b4 [34.6 kB]
+Fetched 14.7 MB in 13s (1109 kB/s)
+Selecting previously unselected package libdpkg-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 158210 files and directories currently installed.)
+Preparing to unpack .../00-libdpkg-perl_1.22.15_all.deb ...
+Unpacking libdpkg-perl (1.22.15) ...
+Selecting previously unselected package patch.
+Preparing to unpack .../01-patch_2.7.6-7+b1_arm64.deb ...
+Unpacking patch (2.7.6-7+b1) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../02-dpkg-dev_1.22.15_all.deb ...
+Unpacking dpkg-dev (1.22.15) ...
+Selecting previously unselected package libstdc++-14-dev:arm64.
+Preparing to unpack .../03-libstdc++-14-dev_14.2.0-16_arm64.deb ...
+Unpacking libstdc++-14-dev:arm64 (14.2.0-16) ...
+Selecting previously unselected package g++-14-aarch64-linux-gnu.
+Preparing to unpack .../04-g++-14-aarch64-linux-gnu_14.2.0-16_arm64.deb ...
+Unpacking g++-14-aarch64-linux-gnu (14.2.0-16) ...
+Selecting previously unselected package g++-14.
+Preparing to unpack .../05-g++-14_14.2.0-16_arm64.deb ...
+Unpacking g++-14 (14.2.0-16) ...
+Selecting previously unselected package g++-aarch64-linux-gnu.
+Preparing to unpack .../06-g++-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+Unpacking g++-aarch64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../07-g++_4%3a14.2.0-1_arm64.deb ...
+Unpacking g++ (4:14.2.0-1) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../08-build-essential_12.12_arm64.deb ...
+Unpacking build-essential (12.12) ...
+Selecting previously unselected package dkms.
+Preparing to unpack .../09-dkms_3.1.5-1_all.deb ...
+Unpacking dkms (3.1.5-1) ...
+Selecting previously unselected package libfakeroot:arm64.
+Preparing to unpack .../10-libfakeroot_1.37-1_arm64.deb ...
+Unpacking libfakeroot:arm64 (1.37-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../11-fakeroot_1.37-1_arm64.deb ...
+Unpacking fakeroot (1.37-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../12-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl:arm64.
+Preparing to unpack .../13-libalgorithm-diff-xs-perl_0.04-8+b4_arm64.deb ...
+Unpacking libalgorithm-diff-xs-perl:arm64 (0.04-8+b4) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../14-libalgorithm-merge-perl_0.08-5_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-5) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../15-libfile-fcntllock-perl_0.22-4+b4_arm64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-4+b4) ...
+Setting up libfile-fcntllock-perl (0.22-4+b4) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up libfakeroot:arm64 (1.37-1) ...
+Setting up fakeroot (1.37-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up patch (2.7.6-7+b1) ...
+Setting up libdpkg-perl (1.22.15) ...
+Setting up libstdc++-14-dev:arm64 (14.2.0-16) ...
+Setting up libalgorithm-diff-xs-perl:arm64 (0.04-8+b4) ...
+Setting up libalgorithm-merge-perl (0.08-5) ...
+Setting up g++-14-aarch64-linux-gnu (14.2.0-16) ...
+Setting up dpkg-dev (1.22.15) ...
+Setting up dkms (3.1.5-1) ...
+Setting up g++-aarch64-linux-gnu (4:14.2.0-1) ...
+Setting up g++-14 (14.2.0-16) ...
+Setting up g++ (4:14.2.0-1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.12) ...
+Processing triggers for man-db (2.13.0-1) ...
+Processing triggers for libc-bin (2.40-6) ...
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://security.debian.org/debian-security trixie-security InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libzstd-dev zlib1g-dev
+The following NEW packages will be installed:
+  libelf-dev libzstd-dev zlib1g-dev
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1341 kB of archives.
+After this operation, 2989 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 zlib1g-dev arm64 1:1.3.dfsg+really1.3.1-1+b1 [917 kB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 libzstd-dev arm64 1.5.6+dfsg-2 [329 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 libelf-dev arm64 0.192-4 [94.9 kB]
+Fetched 1341 kB in 2s (659 kB/s)
+Selecting previously unselected package zlib1g-dev:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 159797 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_arm64.deb ...
+Unpacking zlib1g-dev:arm64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Selecting previously unselected package libzstd-dev:arm64.
+Preparing to unpack .../libzstd-dev_1.5.6+dfsg-2_arm64.deb ...
+Unpacking libzstd-dev:arm64 (1.5.6+dfsg-2) ...
+Selecting previously unselected package libelf-dev:arm64.
+Preparing to unpack .../libelf-dev_0.192-4_arm64.deb ...
+Unpacking libelf-dev:arm64 (0.192-4) ...
+Setting up libzstd-dev:arm64 (1.5.6+dfsg-2) ...
+Setting up zlib1g-dev:arm64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Setting up libelf-dev:arm64 (0.192-4) ...
+Processing triggers for man-db (2.13.0-1) ...
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://security.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 244 kB of archives.
+After this operation, 1404 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 net-tools arm64 2.10-1.1+b1 [244 kB]
+Fetched 244 kB in 2s (144 kB/s)
+Selecting previously unselected package net-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 159906 files and directories currently installed.)
+Preparing to unpack .../net-tools_2.10-1.1+b1_arm64.deb ...
+Unpacking net-tools (2.10-1.1+b1) ...
+Setting up net-tools (2.10-1.1+b1) ...
+Processing triggers for man-db (2.13.0-1) ...
+Hit:1 http://security.debian.org/debian-security trixie-security InRelease
+Hit:2 http://deb.debian.org/debian trixie InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package printer-driver-postscript-hp
+o printer-driver-postscript-hp
+installer:%0.000000
+modprobe: FATAL: Module prl_tg not found in directory /lib/modules/6.12.12-arm64
+
+Sun Feb 16 22:25:28 MSK 2025
+Start installation or upgrade of Guest Tools
+installer:%10.000000
+installer:%20.000000
+Installed Guest Tools were not found
+Register service to install new Guest Tools
+installer:%30.000000
+Perform installation into the /usr/lib/parallels-tools directory
+installer:%40.000000
+make: Entering directory '/usr/lib/parallels-tools/kmods'
+Kernel version file: CC="/lib/modules/6.12.12-arm64/build/include/generated/uapi/linux/version.h".
+Raw kernel version: "#define LINUX_VERSION_CODE 396300"
+Kernel version code: CC="396300".
+Raw LINUX_COMPILER value: "#define LINUX_COMPILER		"aarch64-linux-gnu-gcc-14 (Debian 14.2.0-14) 14.2.0, GNU ld (GNU Binutils for Debian) 2.43.90.20250202""
+Linux kernel CC version: 14.2.0
+Default compiler: "cc".
+Default compiler version: 	14.2.0
+Will use compiler CC="cc".
+Compiler version "cc (Debian 14.2.0-16) 14.2.0
+cd prl_tg/Toolgate/Guest/Linux/prl_tg && make CC=cc
+make[1]: Entering directory '/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg'
+1: /lib/modules/6.12.12-arm64/build
+2: /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg
+3: 20250216
+4: 1.10.2
+Start compile prl_tg...
+make -C /lib/modules/6.12.12-arm64/build M=/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg SRCROOT=/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg CC=cc modules
+make[2]: Entering directory '/usr/src/linux-headers-6.12.12-arm64'
+1: /lib/modules/6.12.12-arm64/build
+2: /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg
+3: 20250216
+4: 1.10.2
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prltg.o
+In file included from /usr/src/linux-headers-6.12.12-common/include/linux/mm_types.h:19,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/mmzone.h:22,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/gfp.h:7,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/umh.h:4,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/kmod.h:9,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/module.h:17,
+                 from /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prltg.c:6:
+/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prltg.c: In function 'prl_tg_deinitialize':
+/usr/src/linux-headers-6.12.12-common/include/linux/workqueue.h:765:9: warning: call to '__warn_flushing_systemwide_wq' declared with attribute warning: Please avoid flushing system-wide workqueues. [-Wattribute-warning]
+  765 |         __warn_flushing_systemwide_wq();                                \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prltg.c:573:9: note: in expansion of macro 'flush_scheduled_work'
+  573 |         flush_scheduled_work();
+      |         ^~~~~~~~~~~~~~~~~~~~
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prltg_call.o
+  LD [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prl_tg.o
+1: /lib/modules/6.12.12-arm64/build
+2: /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg
+3: 20250216
+4: 1.10.2
+  MODPOST /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/Module.symvers
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prl_tg.mod.o
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/.module-common.o
+  LD [M]  /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prl_tg.ko
+  BTF [M] /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prl_tg.ko
+Skipping BTF generation for /usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg/prl_tg.ko due to unavailability of vmlinux
+make[2]: Leaving directory '/usr/src/linux-headers-6.12.12-arm64'
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_tg/Toolgate/Guest/Linux/prl_tg'
+cd prl_notifier/Installation/lnx/prl_notifier && make CC=cc
+make[1]: Entering directory '/usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier'
+Start compile prl_notifier...
+make -C /lib/modules/6.12.12-arm64/build M=/usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier SRCROOT=/usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier CC=cc modules
+make[2]: Entering directory '/usr/src/linux-headers-6.12.12-arm64'
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prlnotifier.o
+  LD [M]  /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prl_notifier.o
+  MODPOST /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/Module.symvers
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prl_notifier.mod.o
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/.module-common.o
+  LD [M]  /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prl_notifier.ko
+  BTF [M] /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prl_notifier.ko
+Skipping BTF generation for /usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier/prl_notifier.ko due to unavailability of vmlinux
+make[2]: Leaving directory '/usr/src/linux-headers-6.12.12-arm64'
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_notifier/Installation/lnx/prl_notifier'
+cd prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze && make CC=cc
+make[1]: Entering directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+make -C /lib/modules/6.12.12-arm64/build M=/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze CC=cc modules
+make[2]: Entering directory '/usr/src/linux-headers-6.12.12-arm64'
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:52:15: warning: no previous prototype for 'lookup_target' [-Wmissing-prototypes]
+   52 | struct inode *lookup_target(char *pathname)
+      |               ^~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:78:5: warning: no previous prototype for 'freeze_sb' [-Wmissing-prototypes]
+   78 | int freeze_sb(struct super_block *sb)
+      |     ^~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:105:5: warning: no previous prototype for 'thaw_sb' [-Wmissing-prototypes]
+  105 | int thaw_sb(struct super_block *sb)
+      |     ^~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:120:5: warning: no previous prototype for 'process_path' [-Wmissing-prototypes]
+  120 | int process_path(char *path, int freeze)
+      |     ^~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:141:5: warning: no previous prototype for 'thaw_all' [-Wmissing-prototypes]
+  141 | int thaw_all(void)
+      |     ^~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:156:6: warning: no previous prototype for 'thaw_timeout' [-Wmissing-prototypes]
+  156 | void thaw_timeout(struct work_struct *work)
+      |      ^~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:164:6: warning: no previous prototype for 'thaw_timer_fn' [-Wmissing-prototypes]
+  164 | void thaw_timer_fn(struct timer_list *unused)
+      |      ^~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:180:6: warning: no previous prototype for 'schedule_thaw_work' [-Wmissing-prototypes]
+  180 | bool schedule_thaw_work(struct work_struct *work, unsigned long timeout)
+      |      ^~~~~~~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:189:6: warning: no previous prototype for 'cancel_timeout' [-Wmissing-prototypes]
+  189 | void cancel_timeout(void)
+      |      ^~~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:195:5: warning: no previous prototype for 'arm_timeout' [-Wmissing-prototypes]
+  195 | int arm_timeout(char *arg)
+      |     ^~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:212:9: warning: no previous prototype for 'freeze_write' [-Wmissing-prototypes]
+  212 | ssize_t freeze_write(struct file *file, const char __user *userbuf,
+      |         ^~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:303:5: warning: no previous prototype for 'seq_show' [-Wmissing-prototypes]
+  303 | int seq_show(struct seq_file *file, void *data)
+      |     ^~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:321:5: warning: no previous prototype for 'freeze_open' [-Wmissing-prototypes]
+  321 | int freeze_open(struct inode *inode, struct file *file)
+      |     ^~~~~~~~~~~
+In file included from /usr/src/linux-headers-6.12.12-common/include/linux/mm_types.h:19,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/mmzone.h:22,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/gfp.h:7,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/umh.h:4,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/kmod.h:9,
+                 from /usr/src/linux-headers-6.12.12-common/include/linux/module.h:17,
+                 from /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:15:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function 'cancel_timeout':
+/usr/src/linux-headers-6.12.12-common/include/linux/workqueue.h:765:9: warning: call to '__warn_flushing_systemwide_wq' declared with attribute warning: Please avoid flushing system-wide workqueues. [-Wattribute-warning]
+  765 |         __warn_flushing_systemwide_wq();                                \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:192:9: note: in expansion of macro 'flush_scheduled_work'
+  192 |         flush_scheduled_work();
+      |         ^~~~~~~~~~~~~~~~~~~~
+In function 'cancel_timeout',
+    inlined from 'freeze_write' at /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:253:5:
+/usr/src/linux-headers-6.12.12-common/include/linux/workqueue.h:765:9: warning: call to '__warn_flushing_systemwide_wq' declared with attribute warning: Please avoid flushing system-wide workqueues. [-Wattribute-warning]
+  765 |         __warn_flushing_systemwide_wq();                                \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:192:9: note: in expansion of macro 'flush_scheduled_work'
+  192 |         flush_scheduled_work();
+      |         ^~~~~~~~~~~~~~~~~~~~
+  MODPOST /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/Module.symvers
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.mod.o
+  CC [M]  /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/.module-common.o
+  LD [M]  /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.ko
+  BTF [M] /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.ko
+Skipping BTF generation for /usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.ko due to unavailability of vmlinux
+make[2]: Leaving directory '/usr/src/linux-headers-6.12.12-arm64'
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+make: Leaving directory '/usr/lib/parallels-tools/kmods'
+Start installation of prl_tg kernel module
+Start installation of prl_fs_freeze kernel module
+Start installation of prl_notifier kernel module
+/usr/lib/parallels-tools/kmods/dkms.conf: line 34: unexpected EOF while looking for matching `"'
+dkms.conf: Error! No 'PACKAGE_NAME' directive specified.
+dkms.conf: Error! No 'PACKAGE_VERSION' directive specified.
+dkms.conf: Warning! Zero modules specified.
+
+Error! Bad conf file.
+File: /usr/lib/parallels-tools/kmods/dkms.conf does not represent a valid dkms.conf file.
+DKMS modules were not added
+DKMS modules for kernel 6.12.12-arm64 building failed
+DKMS modules for kernel 6.12.12-arm64 installation failed
+DKMS modules for kernel 6.12.6-arm64 building failed
+DKMS modules for kernel 6.12.6-arm64 installation failed
+installer:%50.000000
+installer:%60.000000
+installer:%70.000000
+Installing libPrlWl.so.1 (aarch64) ...
+'/usr/lib/parallels-tools/tools/tools-arm64/lib/libPrlWl.so.1.0.0' -> '/lib/aarch64-linux-gnu/libPrlWl.so.1'
+Running ldconfig...
+'/home/bazis/Desktop/Parallels Shared Folders' -> '/media/psf'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prltimesync' -> '/usr/bin/prltimesync'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prltoolsd' -> '/usr/bin/prltoolsd'
+'/media/cdrom0/installer/prltoolsd.service' -> '/etc/systemd/system//prltoolsd.service'
+Created symlink '/etc/systemd/system/multi-user.target.wants/prltoolsd.service' -> '/etc/systemd/system/prltoolsd.service'.
+'/media/cdrom0/installer/prltools-reconfig.service' -> '/etc/systemd/system//prltools-reconfig.service'
+Created symlink '/etc/systemd/system/multi-user.target.wants/prltools-reconfig.service' -> '/etc/systemd/system/prltools-reconfig.service'.
+'/usr/lib/parallels-tools/tools/prlfsmountd.sh' -> '/usr/bin/prlfsmountd'
+'/usr/lib/parallels-tools/tools/prlbinfmtconfig.sh' -> '/usr/bin/prlbinfmtconfig'
+Warning: no semanage found in system
+Not changing type for /usr/lib/parallels-tools/tools/../installer.
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prlcc' -> '/usr/bin/prlcc'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prldnd' -> '/usr/bin/prldnd'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prlcp' -> '/usr/bin/prlcp'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prlhosttime' -> '/usr/bin/prlhosttime'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prl_showvmcfg' -> '/usr/bin/prl_showvmcfg'
+'/usr/lib/parallels-tools/tools/tools-arm64/sbin/prl_nettool' -> '/usr/sbin/prl_nettool'
+'/usr/lib/parallels-tools/tools/tools-arm64/sbin/prl_snapshot' -> '/usr/sbin/prl_snapshot'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prlshprof' -> '/usr/bin/prlshprof'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prlshprint' -> '/usr/bin/prlshprint'
+'/usr/lib/parallels-tools/tools/tools-arm64/bin/prl_fsd' -> '/usr/bin/prl_fsd'
+'/etc/xdg/autostart/prlcc.desktop' -> '/usr/lib/parallels-tools/tools/prlcc.desktop'
+'/usr/lib/parallels-tools/tools/tools-arm64/sbin/prl-opengl-switcher.sh' -> '/usr/sbin/prl-opengl-switcher.sh'
+'/usr/bin/ptiagent' -> '/usr/lib/parallels-tools/tools/../install-gui'
+'/usr/bin/ptiagent-cmd' -> '/usr/lib/parallels-tools/installer/ptiagent-cmd'
+'/etc/xdg/autostart/ptiagent.desktop' -> '/usr/lib/parallels-tools/tools/ptiagent.desktop'
+'/usr/lib/parallels-tools/tools/parallels-tools.png' -> '/usr/share/icons/hicolor/48x48/apps/parallels-tools.png'
+Perform initramfs update.
+'/media/cdrom0/installer/parallels_tools.initramfs-hook' -> '/usr/share/initramfs-tools/hooks/parallels_tools'
+update-initramfs: Generating /boot/initrd.img-6.12.12-arm64
+update-initramfs: Generating /boot/initrd.img-6.12.6-arm64
+installer:%80.000000
+Send installed Parallels Tools version to dispatcher.
+installer:%90.000000
+>>> Postinstall
+Writing OS version and Xorg version
+Enabling PRL_GL
+Starting prltoolsd service:
+Mask suspend service unit (since virtio-gpu doesn't support suspend/resume):
+'/usr/lib/parallels-tools/tools/prl-nosuspend.conf' -> '/etc/systemd/sleep.conf.d/prl-nosuspend.conf'
+installer:%100.000000
+Parallels Guest Tools were installed successfully!
+Please, reboot your OS to finish installation of Parallels Guest Tools.
+Started installation of Parallels Guest Tools version '20.2.1.55876'
+Get:1 http://security.debian.org/debian-security trixie-security InRelease [48.0 kB]
+Get:2 http://deb.debian.org/debian trixie InRelease [175 kB]
+Get:3 http://deb.debian.org/debian trixie-updates InRelease [49.6 kB]
+Get:4 http://deb.debian.org/debian trixie/main Sources.diff/Index [27.9 kB]
+Get:5 http://deb.debian.org/debian trixie/main arm64 Packages.diff/Index [27.9 kB]
+Get:6 http://deb.debian.org/debian trixie/main Translation-en.diff/Index [27.9 kB]
+Get:7 http://deb.debian.org/debian trixie/main Sources 2025-03-11-2007.23.pdiff [888 B]
+Get:8 http://deb.debian.org/debian trixie/main Sources 2025-03-12-0207.37.pdiff [34.8 kB]
+Get:9 http://deb.debian.org/debian trixie/main Sources 2025-03-12-0843.28.pdiff [10.1 kB]
+Get:10 http://deb.debian.org/debian trixie/main Sources 2025-03-12-1407.55.pdiff [6809 B]
+Get:11 http://deb.debian.org/debian trixie/main Sources 2025-03-12-2016.04.pdiff [5435 B]
+Get:12 http://deb.debian.org/debian trixie/main Sources 2025-03-13-0204.09.pdiff [27.2 kB]
+Get:13 http://deb.debian.org/debian trixie/main Sources 2025-03-13-0807.42.pdiff [4108 B]
+Get:14 http://deb.debian.org/debian trixie/main Sources 2025-03-13-1405.02.pdiff [4955 B]
+Get:15 http://deb.debian.org/debian trixie/main Sources 2025-03-13-2013.38.pdiff [76.6 kB]
+Get:16 http://deb.debian.org/debian trixie/main Sources 2025-03-14-0234.12.pdiff [41.3 kB]
+Get:17 http://deb.debian.org/debian trixie/main Sources 2025-03-14-0811.49.pdiff [4413 B]
+Get:18 http://deb.debian.org/debian trixie/main Sources 2025-03-14-1409.47.pdiff [2735 B]
+Get:19 http://deb.debian.org/debian trixie/main Sources 2025-03-14-2017.04.pdiff [1178 B]
+Get:20 http://deb.debian.org/debian trixie/main Sources 2025-03-15-0211.38.pdiff [36.3 kB]
+Get:21 http://deb.debian.org/debian trixie/main Sources 2025-03-15-1417.07.pdiff [5027 B]
+Get:22 http://deb.debian.org/debian trixie/main Sources 2025-03-15-2005.14.pdiff [1031 B]
+Get:23 http://deb.debian.org/debian trixie/main Sources 2025-03-16-0212.09.pdiff [30.1 kB]
+Get:24 http://deb.debian.org/debian trixie/main Sources 2025-03-16-0809.53.pdiff [4499 B]
+Get:25 http://deb.debian.org/debian trixie/main Sources 2025-03-16-1413.17.pdiff [312 B]
+Get:26 http://deb.debian.org/debian trixie/main Sources 2025-03-16-2011.33.pdiff [2648 B]
+Get:27 http://deb.debian.org/debian trixie/main Sources 2025-03-17-0221.34.pdiff [34.5 kB]
+Get:28 http://deb.debian.org/debian trixie/main Sources 2025-03-17-0818.05.pdiff [2304 B]
+Get:29 http://deb.debian.org/debian trixie/main Sources 2025-03-17-1412.21.pdiff [484 B]
+Get:30 http://deb.debian.org/debian trixie/main Sources 2025-03-17-2007.51.pdiff [1481 B]
+Get:31 http://deb.debian.org/debian trixie/main Sources 2025-03-18-0209.56.pdiff [31.5 kB]
+Get:32 http://deb.debian.org/debian trixie/main Sources 2025-03-18-0805.44.pdiff [3277 B]
+Get:33 http://deb.debian.org/debian trixie/main Sources 2025-03-18-1408.19.pdiff [10.5 kB]
+Get:34 http://deb.debian.org/debian trixie/main Sources 2025-03-19-0206.55.pdiff [35.6 kB]
+Get:35 http://deb.debian.org/debian trixie/main Sources 2025-03-19-0814.24.pdiff [5611 B]
+Get:36 http://deb.debian.org/debian trixie/main Sources 2025-03-19-1410.54.pdiff [1541 B]
+Get:37 http://deb.debian.org/debian trixie/main Sources 2025-03-19-2022.45.pdiff [2890 B]
+Get:38 http://deb.debian.org/debian trixie/main Sources 2025-03-20-0217.21.pdiff [47.0 kB]
+Get:39 http://deb.debian.org/debian trixie/main Sources 2025-03-20-0805.31.pdiff [6862 B]
+Get:40 http://deb.debian.org/debian trixie/main Sources 2025-03-20-1408.28.pdiff [2155 B]
+Get:41 http://deb.debian.org/debian trixie/main Sources 2025-03-20-2004.41.pdiff [1059 B]
+Get:42 http://deb.debian.org/debian trixie/main Sources 2025-03-21-0205.50.pdiff [29.4 kB]
+Get:43 http://deb.debian.org/debian trixie/main Sources 2025-03-21-0852.32.pdiff [2872 B]
+Get:44 http://deb.debian.org/debian trixie/main Sources 2025-03-21-1409.29.pdiff [2890 B]
+Get:45 http://deb.debian.org/debian trixie/main Sources 2025-03-21-2015.13.pdiff [2580 B]
+Get:46 http://deb.debian.org/debian trixie/main Sources 2025-03-22-0211.57.pdiff [61.3 kB]
+Get:47 http://deb.debian.org/debian trixie/main Sources 2025-03-22-0807.09.pdiff [1339 B]
+Get:48 http://deb.debian.org/debian trixie/main Sources 2025-03-22-1409.20.pdiff [4077 B]
+Get:49 http://deb.debian.org/debian trixie/main Sources 2025-03-22-2009.47.pdiff [2371 B]
+Get:50 http://deb.debian.org/debian trixie/main Sources 2025-03-23-0207.52.pdiff [63.0 kB]
+Get:51 http://deb.debian.org/debian trixie/main Sources 2025-03-23-0813.47.pdiff [530 B]
+Get:52 http://deb.debian.org/debian trixie/main Sources 2025-03-23-1413.24.pdiff [9090 B]
+Get:53 http://deb.debian.org/debian trixie/main Sources 2025-03-23-2025.42.pdiff [6623 B]
+Get:54 http://deb.debian.org/debian trixie/main Sources 2025-03-24-0208.15.pdiff [35.0 kB]
+Get:55 http://deb.debian.org/debian trixie/main Sources 2025-03-24-0811.12.pdiff [6430 B]
+Get:56 http://deb.debian.org/debian trixie/main Sources 2025-03-24-1420.15.pdiff [497 B]
+Get:57 http://deb.debian.org/debian trixie/main Sources 2025-03-24-2008.45.pdiff [1147 B]
+Get:58 http://deb.debian.org/debian trixie/main Sources 2025-03-25-0204.37.pdiff [33.4 kB]
+Get:59 http://deb.debian.org/debian trixie/main Sources 2025-03-25-0804.07.pdiff [664 B]
+Get:60 http://deb.debian.org/debian trixie/main Sources 2025-03-25-1404.21.pdiff [1632 B]
+Get:60 http://deb.debian.org/debian trixie/main Sources 2025-03-25-1404.21.pdiff [1632 B]
+Get:61 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-11-2007.23.pdiff [538 B]
+Get:62 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-12-0207.37.pdiff [53.9 kB]
+Get:63 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-12-0843.28.pdiff [11.1 kB]
+Get:64 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-12-1407.55.pdiff [7282 B]
+Get:65 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-12-2016.04.pdiff [19.0 kB]
+Get:66 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-13-0204.09.pdiff [47.9 kB]
+Get:67 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-13-0807.42.pdiff [7542 B]
+Get:68 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-13-1405.02.pdiff [17.6 kB]
+Get:69 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-13-2013.38.pdiff [192 kB]
+Get:70 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-14-0234.12.pdiff [54.0 kB]
+Get:71 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-14-0811.49.pdiff [2759 B]
+Get:72 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-14-1409.47.pdiff [4788 B]
+Get:73 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-14-2017.04.pdiff [683 B]
+Get:74 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-15-0211.38.pdiff [42.8 kB]
+Get:75 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-15-1417.07.pdiff [6135 B]
+Get:76 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-15-2005.14.pdiff [3815 B]
+Get:77 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-16-0212.09.pdiff [111 kB]
+Get:78 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-16-0809.53.pdiff [10.3 kB]
+Get:79 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-16-1413.17.pdiff [8826 B]
+Get:80 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-16-2011.33.pdiff [6347 B]
+Get:81 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-17-0221.34.pdiff [49.8 kB]
+Get:82 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-17-0818.05.pdiff [2438 B]
+Get:83 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-17-1412.21.pdiff [2685 B]
+Get:84 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-17-2007.51.pdiff [1192 B]
+Get:85 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-18-0209.56.pdiff [41.6 kB]
+Get:86 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-18-0805.44.pdiff [2735 B]
+Get:87 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-18-1408.19.pdiff [9756 B]
+Get:88 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-19-0206.55.pdiff [43.1 kB]
+Get:89 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-19-0814.24.pdiff [16.5 kB]
+Get:90 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-19-1410.54.pdiff [9571 B]
+Get:91 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-19-2022.45.pdiff [3702 B]
+Get:92 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-20-0217.21.pdiff [67.6 kB]
+Get:93 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-20-0805.31.pdiff [10.2 kB]
+Get:94 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-20-1408.28.pdiff [2679 B]
+Get:95 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-20-2004.41.pdiff [1790 B]
+Get:96 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-21-0205.50.pdiff [33.0 kB]
+Get:97 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-21-0852.32.pdiff [10.6 kB]
+Get:98 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-21-1409.29.pdiff [4702 B]
+Get:99 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-21-2015.13.pdiff [2188 B]
+Get:100 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-22-0211.57.pdiff [70.2 kB]
+Get:101 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-22-0807.09.pdiff [2536 B]
+Get:102 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-22-1409.20.pdiff [4779 B]
+Get:103 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-22-2009.47.pdiff [8099 B]
+Get:104 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-23-0207.52.pdiff [103 kB]
+Get:105 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-23-0813.47.pdiff [476 B]
+Get:106 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-23-1413.24.pdiff [12.0 kB]
+Get:107 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-23-2025.42.pdiff [12.4 kB]
+Get:108 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-24-0208.15.pdiff [131 kB]
+Get:109 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-24-0811.12.pdiff [99.2 kB]
+Get:110 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-24-1420.15.pdiff [1447 B]
+Get:111 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-24-2008.45.pdiff [2454 B]
+Get:112 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-25-0204.37.pdiff [36.4 kB]
+Get:113 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-25-0804.07.pdiff [2022 B]
+Get:114 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-25-1404.21.pdiff [2540 B]
+Get:114 http://deb.debian.org/debian trixie/main arm64 Packages 2025-03-25-1404.21.pdiff [2540 B]
+Get:115 http://deb.debian.org/debian trixie/main Translation-en 2025-03-11-2007.23.pdiff [244 B]
+Get:116 http://deb.debian.org/debian trixie/main Translation-en 2025-03-12-0207.37.pdiff [2451 B]
+Get:117 http://deb.debian.org/debian trixie/main Translation-en 2025-03-12-0843.28.pdiff [535 B]
+Get:118 http://deb.debian.org/debian trixie/main Translation-en 2025-03-12-1407.55.pdiff [2475 B]
+Get:119 http://deb.debian.org/debian trixie/main Translation-en 2025-03-13-0204.09.pdiff [5127 B]
+Get:120 http://deb.debian.org/debian trixie/main Translation-en 2025-03-13-1405.02.pdiff [1045 B]
+Get:121 http://deb.debian.org/debian trixie/main Translation-en 2025-03-13-2013.38.pdiff [6329 B]
+Get:122 http://deb.debian.org/debian trixie/main Translation-en 2025-03-14-0234.12.pdiff [7426 B]
+Get:123 http://deb.debian.org/debian trixie/main Translation-en 2025-03-14-1409.47.pdiff [413 B]
+Get:124 http://deb.debian.org/debian trixie/main Translation-en 2025-03-15-0211.38.pdiff [5261 B]
+Get:125 http://deb.debian.org/debian trixie/main Translation-en 2025-03-15-1417.07.pdiff [2074 B]
+Get:126 http://deb.debian.org/debian trixie/main Translation-en 2025-03-16-0212.09.pdiff [5770 B]
+Get:127 http://deb.debian.org/debian trixie/main Translation-en 2025-03-16-0809.53.pdiff [361 B]
+Get:128 http://deb.debian.org/debian trixie/main Translation-en 2025-03-16-2011.33.pdiff [936 B]
+Get:129 http://deb.debian.org/debian trixie/main Translation-en 2025-03-17-0221.34.pdiff [3858 B]
+Get:130 http://deb.debian.org/debian trixie/main Translation-en 2025-03-17-0818.05.pdiff [649 B]
+Get:131 http://deb.debian.org/debian trixie/main Translation-en 2025-03-18-0209.56.pdiff [2649 B]
+Get:132 http://deb.debian.org/debian trixie/main Translation-en 2025-03-18-1408.19.pdiff [341 B]
+Get:133 http://deb.debian.org/debian trixie/main Translation-en 2025-03-19-0206.55.pdiff [3058 B]
+Get:134 http://deb.debian.org/debian trixie/main Translation-en 2025-03-19-0814.24.pdiff [378 B]
+Get:135 http://deb.debian.org/debian trixie/main Translation-en 2025-03-19-1410.54.pdiff [33 B]
+Get:136 http://deb.debian.org/debian trixie/main Translation-en 2025-03-19-2022.45.pdiff [820 B]
+Get:137 http://deb.debian.org/debian trixie/main Translation-en 2025-03-20-0217.21.pdiff [5205 B]
+Get:138 http://deb.debian.org/debian trixie/main Translation-en 2025-03-20-0805.31.pdiff [1562 B]
+Get:139 http://deb.debian.org/debian trixie/main Translation-en 2025-03-20-1408.28.pdiff [33 B]
+Get:140 http://deb.debian.org/debian trixie/main Translation-en 2025-03-21-0205.50.pdiff [5308 B]
+Get:141 http://deb.debian.org/debian trixie/main Translation-en 2025-03-21-1409.29.pdiff [68 B]
+Get:142 http://deb.debian.org/debian trixie/main Translation-en 2025-03-21-2015.13.pdiff [948 B]
+Get:143 http://deb.debian.org/debian trixie/main Translation-en 2025-03-22-0211.57.pdiff [8794 B]
+Get:144 http://deb.debian.org/debian trixie/main Translation-en 2025-03-22-1409.20.pdiff [97 B]
+Get:145 http://deb.debian.org/debian trixie/main Translation-en 2025-03-23-0207.52.pdiff [7550 B]
+Get:146 http://deb.debian.org/debian trixie/main Translation-en 2025-03-23-1413.24.pdiff [873 B]
+Get:147 http://deb.debian.org/debian trixie/main Translation-en 2025-03-23-2025.42.pdiff [622 B]
+Get:148 http://deb.debian.org/debian trixie/main Translation-en 2025-03-24-0208.15.pdiff [7031 B]
+Get:149 http://deb.debian.org/debian trixie/main Translation-en 2025-03-24-1420.15.pdiff [179 B]
+Get:150 http://deb.debian.org/debian trixie/main Translation-en 2025-03-24-2008.45.pdiff [305 B]
+Get:151 http://deb.debian.org/debian trixie/main Translation-en 2025-03-25-0204.37.pdiff [2735 B]
+Get:152 http://deb.debian.org/debian trixie/main Translation-en 2025-03-25-0804.07.pdiff [643 B]
+Get:152 http://deb.debian.org/debian trixie/main Translation-en 2025-03-25-0804.07.pdiff [643 B]
+Get:153 http://deb.debian.org/debian trixie/main arm64 Components [4462 kB]
+Get:154 http://deb.debian.org/debian trixie/main Icons (48x48) [3579 kB]
+Get:155 http://deb.debian.org/debian trixie/main Icons (64x64) [7250 kB]
+Fetched 17.9 MB in 10s (1858 kB/s)
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package linux-headers-6.12.17-arm64
+E: Couldn't find any package by glob 'linux-headers-6.12.17-arm64'
+E: Couldn't find any package by regex 'linux-headers-6.12.17-arm64'
+m linux-headers-6.12.17-arm64
+o printer-driver-postscript-hp
+Error: failed to install mandatory packages.
+Error: failed to install or upgrade Parallels Guest Tools!
+Started installation of Parallels Guest Tools version '20.2.1.55876'
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://security.debian.org/debian-security trixie-security InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package linux-headers-6.12.17-arm64
+E: Couldn't find any package by glob 'linux-headers-6.12.17-arm64'
+E: Couldn't find any package by regex 'linux-headers-6.12.17-arm64'
+m linux-headers-6.12.17-arm64
+o printer-driver-postscript-hp
+Error: failed to install mandatory packages.
+Error: failed to install or upgrade Parallels Guest Tools!
+Started installation of Parallels Guest Tools version '20.2.1.55876'
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://security.debian.org/debian-security trixie-security InRelease
+Hit:3 http://deb.debian.org/debian trixie-updates InRelease
+Reading package lists...
+Return code from apt-get update is 0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package linux-headers-6.12.17-arm64
+E: Couldn't find any package by glob 'linux-headers-6.12.17-arm64'
+E: Couldn't find any package by regex 'linux-headers-6.12.17-arm64'
+m linux-headers-6.12.17-arm64
+o printer-driver-postscript-hp
+Error: failed to install mandatory packages.
+Error: failed to install or upgrade Parallels Guest Tools!
