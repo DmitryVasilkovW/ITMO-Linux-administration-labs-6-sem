@@ -1,2 +1,4 @@
-hostname (in current)
-hostname (in other)
+#!/bin/bash
+
+hostname #(in current)
+hostname #(in other)
