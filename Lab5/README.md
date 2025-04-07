@@ -140,8 +140,7 @@ hostname isolated-student-67
 **Проверка**
 
 ```shell
-hostname (in current)
-hostname (in other)
+hostname
 ```
 
 # 7) Изоляция процессов (пространство имен PID)
