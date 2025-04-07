@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CPU_SET_PATH=$(mount | grep cpuset | awk '{print $3}')
 
 sudo mkdir "$CPU_SET_PATH/cpu0"
