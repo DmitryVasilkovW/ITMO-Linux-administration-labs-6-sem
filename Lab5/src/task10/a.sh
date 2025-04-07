@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p ~/overlay_/{lower,upper,work,merged}
 
 echo "Оригинальный текст из LOWER" > ~/overlay_/lower/67_original.txt
